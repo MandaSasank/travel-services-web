@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Packages</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <h1>Travel Packages</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="packages.html">Packages</a>
+    <a href="travel.html">Travel Options</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Compare Travel Packages</h2>
+      <p>Users can search the table and filter package cards by budget before choosing a trip.</p>
+    </div>
+
+    <div class="filter-bar" aria-label="Package budget filters">
+      <button type="button" class="package-filter active-filter" data-budget="all">All Packages</button>
+      <button type="button" class="package-filter" data-budget="5000">Under ₹5000</button>
+      <button type="button" class="package-filter" data-budget="8000">Under ₹8000</button>
+      <button type="button" class="package-filter" data-budget="12000">Under ₹12000</button>
+    </div>
+
+    <div class="sort-controls">
+      <label for="categoryFilter">Category</label>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="beach">Beach</option>
+        <option value="hill">Hill Station</option>
+        <option value="nature">Nature</option>
+        <option value="heritage">Heritage</option>
+      </select>
+
+      <label for="packageSort">Sort Packages</label>
+      <select id="packageSort">
+        <option value="default">Default Order</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div class="package-grid">
+      <article class="package-card" data-price="5000" data-category="beach" data-days="3" data-inclusions="Hotel stay, breakfast, beach sightseeing, local guide">
+        <h3>Goa Beach Break</h3>
+        <p>3 Days · Beach · Hotel + sightseeing</p>
+        <strong>₹5000</strong>
+        <a class="text-link" href="booking.html">Request Booking</a>
+        <button type="button" class="details-button">View Details</button>
+      </article>
+      <article class="package-card" data-price="4000" data-category="hill" data-days="2" data-inclusions="Hotel stay, botanical garden visit, toy train guidance, local tour">
+        <h3>Ooty Hill Escape</h3>
+        <p>2 Days · Hill Station · Hotel + local tour</p>
+        <strong>₹4000</strong>
+        <a class="text-link" href="booking.html">Request Booking</a>
+        <button type="button" class="details-button">View Details</button>
+      </article>
+      <article class="package-card" data-price="12000" data-category="nature" data-days="5" data-inclusions="Hotel stay, valley sightseeing, garden visit, houseboat experience">
+        <h3>Kashmir Scenic Tour</h3>
+        <p>5 Days · Nature · Hotel + sightseeing</p>
+        <strong>₹12000</strong>
+        <a class="text-link" href="booking.html">Request Booking</a>
+        <button type="button" class="details-button">View Details</button>
+      </article>
+      <article class="package-card" data-price="7500" data-category="heritage" data-days="3" data-inclusions="Hotel stay, fort visits, city tour, market visit">
+        <h3>Jaipur Heritage Trip</h3>
+        <p>3 Days · Heritage · Forts + city tour</p>
+        <strong>₹7500</strong>
+        <a class="text-link" href="booking.html">Request Booking</a>
+        <button type="button" class="details-button">View Details</button>
+      </article>
+    </div>
+
+    <table>
+      <tr>
+        <th>Place</th>
+        <th>Days</th>
+        <th>Category</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Goa</td>
+        <td>3 Days</td>
+        <td>Beach</td>
+        <td>₹5000</td>
+      </tr>
+      <tr>
+        <td>Ooty</td>
+        <td>2 Days</td>
+        <td>Hill Station</td>
+        <td>₹4000</td>
+      </tr>
+      <tr>
+        <td>Kashmir</td>
+        <td>5 Days</td>
+        <td>Nature</td>
+        <td>₹12000</td>
+      </tr>
+      <tr>
+        <td>Jaipur</td>
+        <td>3 Days</td>
+        <td>Heritage</td>
+        <td>₹7500</td>
+      </tr>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>Package prices are sample values for project demonstration.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <h1>Contact and Enquiry</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="packages.html">Packages</a>
+    <a href="travel.html">Travel Options</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section contact-layout">
+    <div>
+      <div class="section-heading left-align">
+        <h2>Send a Travel Enquiry</h2>
+        <p>Users can ask questions about packages, transport, destination details, or booking support.</p>
+      </div>
+
+      <form class="contact-form" data-email-target="venkatasasank69@gmail.com" data-success="Thank you! Your enquiry has been prepared for email.">
+        <label for="enquiryName">Name</label>
+        <input id="enquiryName" type="text" required>
+
+        <label for="enquiryEmail">Email</label>
+        <input id="enquiryEmail" type="email" required>
+
+        <label for="placeInterested">Place Interested</label>
+        <input id="placeInterested" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit Enquiry">
+      </form>
+    </div>
+
+    <aside class="info-panel">
+      <h2>Service Details</h2>
+      <p><strong>Email:</strong> venkatasasank69@gmail.com</p>
+      <p><strong>Phone:</strong> +91 7601047859</p>
+      <p><strong>Working Hours:</strong> 9:00 AM to 7:00 PM</p>
+      <p><strong>Support:</strong> Packages, transport, booking requests, and trip planning.</p>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>Enquiry form uses front-end validation and displays instant feedback.</p>
+</footer>
+</body>
+</html>

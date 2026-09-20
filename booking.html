@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <h1>Travel Booking Request</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="packages.html">Packages</a>
+    <a href="travel.html">Travel Options</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section booking-layout">
+    <div>
+      <div class="section-heading left-align">
+        <h2>Submit a Booking Enquiry</h2>
+        <p>
+          Fill the form to calculate an estimated trip cost and submit a booking request.
+          This is a front-end demo, so no real payment or server submission happens.
+        </p>
+      </div>
+
+      <form class="booking-form" data-success="Booking request sent successfully! We will contact you soon.">
+        <label for="customerName">Name</label>
+        <input id="customerName" name="customerName" type="text" required>
+
+        <label for="customerEmail">Email</label>
+        <input id="customerEmail" name="customerEmail" type="email" required>
+
+        <label for="customerPhone">Phone Number</label>
+        <input id="customerPhone" name="customerPhone" type="tel" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
+
+        <label for="destination">Destination</label>
+        <select id="destination" name="destination" required>
+          <option value="Goa">Goa</option>
+          <option value="Ooty">Ooty</option>
+          <option value="Kashmir">Kashmir</option>
+          <option value="Jaipur">Jaipur</option>
+        </select>
+
+        <label for="travelMode">Travel Mode</label>
+        <select id="travelMode" name="travelMode" required>
+          <option value="Bus">Bus</option>
+          <option value="Train">Train</option>
+          <option value="Flight">Flight</option>
+        </select>
+
+        <label for="travelers">Number of Travelers</label>
+        <input id="travelers" name="travelers" type="number" min="1" value="1" required>
+
+        <label for="startDate">Start Date</label>
+        <input id="startDate" name="startDate" type="date" required>
+
+        <label for="endDate">End Date</label>
+        <input id="endDate" name="endDate" type="date" required>
+
+        <label for="days">Number of Days</label>
+        <input id="days" name="days" type="number" min="1" value="3" required>
+
+        <input type="submit" value="Submit Booking Request">
+      </form>
+
+      <div class="trip-checklist">
+        <h2>Trip Planner Checklist</h2>
+        <label><input type="checkbox" data-checklist-item="id-proof"> Carry ID proof</label>
+        <label><input type="checkbox" data-checklist-item="tickets"> Confirm tickets</label>
+        <label><input type="checkbox" data-checklist-item="hotel"> Save hotel details</label>
+        <label><input type="checkbox" data-checklist-item="medicines"> Pack medicines</label>
+        <label><input type="checkbox" data-checklist-item="charger"> Pack charger and power bank</label>
+      </div>
+    </div>
+
+    <aside class="estimate-panel" aria-live="polite">
+      <h2>Estimated Cost</h2>
+      <p class="estimate-total" id="estimateTotal">₹0</p>
+      <p id="estimateDetails">Choose a destination and travel mode to view the estimate.</p>
+      <ul>
+        <li>Package cost is calculated per traveler.</li>
+        <li>Travel fare is calculated per traveler.</li>
+        <li>Final amount is only a demo estimate.</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>Booking requests are validated with JavaScript before showing a success message.</p>
+</footer>
+</body>
+</html>

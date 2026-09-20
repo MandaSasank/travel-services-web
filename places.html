@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Places</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header class="site-header">
+  <h1>Tourist Places</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="packages.html">Packages</a>
+    <a href="travel.html">Travel Options</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Explore Popular Destinations</h2>
+      <p>Search and filter destinations by travel category to help users choose the right place.</p>
+    </div>
+
+    <div class="filter-bar" aria-label="Destination filters">
+      <button type="button" class="filter-button active-filter" data-filter="all">All</button>
+      <button type="button" class="filter-button" data-filter="beach">Beach</button>
+      <button type="button" class="filter-button" data-filter="hill">Hill Station</button>
+      <button type="button" class="filter-button" data-filter="heritage">Heritage</button>
+      <button type="button" class="filter-button" data-filter="nature">Nature</button>
+    </div>
+
+    <div class="destination-grid places-list">
+      <article class="destination-card" data-category="beach">
+        <h3>Goa</h3>
+        <p>Beautiful beaches, nightlife, water sports, and seafood.</p>
+        <span>Best for: Friends and beach trips</span>
+      </article>
+      <article class="destination-card" data-category="hill">
+        <h3>Ooty</h3>
+        <p>Cool weather, green hills, botanical gardens, and toy train rides.</p>
+        <span>Best for: Family vacations</span>
+      </article>
+      <article class="destination-card" data-category="heritage">
+        <h3>Delhi</h3>
+        <p>Historic monuments, museums, street food, and shopping markets.</p>
+        <span>Best for: Culture and history</span>
+      </article>
+      <article class="destination-card" data-category="heritage">
+        <h3>Mumbai</h3>
+        <p>Gateway of India, Marine Drive, film city, and city nightlife.</p>
+        <span>Best for: City explorers</span>
+      </article>
+      <article class="destination-card" data-category="nature">
+        <h3>Kashmir</h3>
+        <p>Snow views, gardens, valleys, houseboats, and scenic landscapes.</p>
+        <span>Best for: Scenic tours</span>
+      </article>
+      <article class="destination-card" data-category="heritage">
+        <h3>Jaipur</h3>
+        <p>Royal palaces, forts, traditional markets, and local food.</p>
+        <span>Best for: Heritage trips</span>
+      </article>
+      <article class="destination-card" data-category="nature">
+        <h3>Kerala</h3>
+        <p>Backwaters, houseboats, beaches, greenery, and Ayurveda.</p>
+        <span>Best for: Relaxing vacations</span>
+      </article>
+      <article class="destination-card" data-category="heritage">
+        <h3>Hyderabad</h3>
+        <p>Charminar, Golconda Fort, biryani, and historical culture.</p>
+        <span>Best for: Food and history</span>
+      </article>
+    </div>
+
+    <div class="image-row">
+      <img src="images/place1.jpg" alt="Tourist place view">
+      <img src="images/place2.jpg" alt="Scenic destination view">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Use filters to shortlist places before comparing packages.</p>
+</footer>
+</body>
+</html>

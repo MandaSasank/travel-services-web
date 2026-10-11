@@ -2,6 +2,8 @@
 
 A responsive travel service website built using HTML, CSS, and JavaScript. The project helps users explore destinations, compare travel packages, review transport options, view a gallery, submit enquiries, and send booking requests with an estimated trip cost.
 
+**Live Demo:** https://mandasasank.github.io/travel-services-web/
+
 ## Features
 
 - Responsive multi-page website with shared navigation
@@ -29,16 +31,5 @@ A responsive travel service website built using HTML, CSS, and JavaScript. The p
 - CSS3
 - JavaScript
 
-## Resume Description
 
-Online Travel Service Website | HTML, CSS, JavaScript
 
-Built a responsive travel service website with mobile navigation, theme modes, destination filtering, package sorting, package details modal, searchable tables, localStorage favourites, date-validated booking form, booking confirmation summary, trip checklist, gallery lightbox, and a dynamic booking cost estimator using JavaScript DOM manipulation.
-
-## Note About Email
-
-This project uses only front-end HTML, CSS, and JavaScript. Because there is no backend server, the contact form opens the user's email app with a prepared message addressed to `venkatasasank69@gmail.com`. Direct automatic email delivery requires a backend or an email service.
-
-## How to Run
-
-Open `index.html` in a browser, or run a local static server and visit the homepage.
